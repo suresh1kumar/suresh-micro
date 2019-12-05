@@ -1,0 +1,67 @@
+body.lwr_main_body{
+	font-family:Arial;
+	font-weight:normal;
+}
+
+table.login_table{
+	padding:20px;
+	color: #ffffff;
+	border: 1px solid black;
+	table-layout : fixed;
+	border-collapse: separate;
+}
+
+div.topdiv_adminpages{
+	height:30vh !important;	
+	overflow: auto;
+}
+
+div.bottomdiv_adminpages{
+	height:40vh !important;
+	overflow: auto;
+}
+
+table.displayTable{
+	border-collapse: collapse;
+	width:100%;
+	padding:5px;
+	border: 1px groove #333;
+	border-radius:10px;
+}
+
+.widecolmaxwidth{
+	max-width:400px;
+	overflow:hidden !important;
+	padding-left:5px;
+}
+
+table.displayTable>tbody>tr,table.displayTable>tbody>tr>td,table.displayTable>tbody>tr>th{
+	border-collapse: collapse;
+	overflow: auto;
+	cursor:pointer;
+}
+table.displayTable>tbody>tr>td
+{
+	vertical-align: middle;
+	padding-top:5px;
+	padding-bottom:5px;
+	border-bottom: 1px #e5e5e5 solid;
+	white-space: nowrap;
+}
+table.displayTable>tbody>tr>th{
+	vertical-align: middle;
+	background-color: #333;
+	font-weight:normal !important;
+	color: #f1f1f1;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.gTableHeaderRow, .gTableHeaderCell {
+	background:lightgrey !important;
+	background-image:none !important;
+	background-color:lightgrey;
+	font-weight:normal !important;
+	font-style:normal;
+	color: black;
+}
