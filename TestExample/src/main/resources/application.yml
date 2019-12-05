@@ -1,0 +1,65 @@
+spring:
+  application:
+    name: test-microservice
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/suresh1kumar/suresh-micro.git
+  
+ #spring.cloud.config.server.git.uri 
+      
+      #spring.jpa.show-sql = true
+# Discovery Server Access
+#eureka:
+  #client:
+     # serviceUrl:
+    
+        #defaultZone: http://localhost:1112/eureka/
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+#server:
+  #port: 3040
+server:
+  error:
+    whitelabel:
+      enabled: false
+  port: 3040
+  
+  
+#server:
+ # port: 3040
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    #eureka-server-read-timeout-seconds: 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+  
+  
+  
+  
+  
+  
+#spring:
+ # cloud:
+  #  config:
+   #   server:
+    #    git:
+          #uri: file:///E://mygitrepo
+     #     uri: https://github.com/sainit/springcloud-test.git
+      #    username: sainit
+       #   password: Sai@1986
+
+ 

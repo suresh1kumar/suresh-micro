@@ -1,0 +1,121 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="favicon.ico" />
+
+<title>User Registration with Spring Boot</title>
+
+<!-- Bootstrap core CSS -->
+<link
+  href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+  crossorigin="anonymous" />
+
+	<link th:href="@{css/style.css}" rel="stylesheet" />
+</head>
+<body class="gray-bg">
+
+  <div class="middle-box text-center loginscreen animated fadeInDown">
+    <div>
+      
+      <hr />
+
+      <h4>New User Registration</h4>
+
+      <form autocomplete="off" action="#" th:action="@{/register}"
+        th:object="${user}" method="post" class="m-t" role="form"
+        data-toggle="validator">
+
+		
+        <div th:if="${confirmationMessage}" class="alert alert-success"
+          role="alert" th:text=${confirmationMessage}></div>
+
+        <div th:if="${alreadyRegisteredMessage}"
+          class="alert alert-danger" role="alert"
+          th:text="${alreadyRegisteredMessage}"></div>
+
+
+        <div th:if="${#fields.hasErrors('firstName')}"
+          th:errors="*{firstName}"
+          class="validation-message alert alert-danger" role="alert"></div>
+
+        <div th:if="${#fields.hasErrors('lastName')}"
+          th:errors="*{lastName}"
+          class="validation-message alert alert-danger" role="alert"></div>
+
+
+        <div th:if="${#fields.hasErrors('email')}" th:errors="*{email}"
+          class="validation-message alert alert-danger" role="alert"></div>
+
+        <div th:if="${#fields.hasErrors('password')}"
+          th:errors="*{password}"
+          class="validation-message alert alert-danger" role="alert"></div>
+
+
+        <div class="form-group input-group has-feedback">
+          <label th:if="${#fields.hasErrors('firstName')}"
+            th:errors="*{firstName}" class="validation-message"></label>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-user"></span>
+          </span>
+          
+          <input type="text" th:field="*{firstName}"
+            placeholder="First Name" class="form-control" required />
+          <span class="glyphicon form-control-feedback"
+            aria-hidden="true"></span>
+        </div>
+
+        <div class="form-group input-group has-feedback">
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-user"></span>
+          </span>
+          <input type="text" th:field="*{lastName}"
+            placeholder="Last Name" class="form-control" required />
+          <span class="glyphicon form-control-feedback"
+            aria-hidden="true"></span>
+        </div>
+
+        <div class="form-group input-group has-feedback">
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-envelope"></span>
+          </span>
+          <input type="email" th:field="*{email}"
+            placeholder="Email Address" class="form-control"
+            data-error="This email address is invalid" required />
+          <span class="glyphicon form-control-feedback"
+            aria-hidden="true"></span>
+
+        </div>
+        
+
+        <button type="submit"
+          class="btn btn-primary block full-width m-b">Register</button>
+
+      </form>
+       <p class="m-t">
+      
+      </p>
+    </div>
+  </div>
+
+
+  <!-- jQuery-->
+  <script
+    src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script
+    src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Validator plugin -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+
+</body>
+</html>

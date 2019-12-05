@@ -1,0 +1,38 @@
+# Service registers under this name
+# Control the InternalResourceViewResolver:
+spring:
+  application:
+    name: accounts-web
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  #jpa:
+   # generate-ddl: true
+   # hibernate:
+  #    ddl-auto: none
+  #datasource:
+ #   url: jdbc:h2:~/test
+ #   driver-class-name: org.h2.Driver
+ #   username: sa
+ #   password: 
+ # h2:
+  #  console:
+  #    enabled: true
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1112/eureka/
+
+# Disable Spring Boot's "Whitelabel" default error page, so we can use our own
+server:
+  error:
+    whitelabel:
+      enabled: false
+    
+    
+    
+    
+    
