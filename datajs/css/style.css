@@ -1,0 +1,213 @@
+html{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #5d5d5d;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #171c66 !important; 
+    
+}
+header{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;	
+}
+.titl{
+      margin: 5px 8px;
+    color: #171c66;
+    font-weight: bold;
+    font-size: 12px;
+}
+.logo{
+
+}
+.box{
+      margin: 10px 0;
+}
+.img{
+width: 50% !important;
+}
+
+.logo img{
+	    width: 10%;
+    margin: 5px 25px;
+}
+.login-box{
+    width: 30%;
+    margin: 15px auto;
+    border: 1px solid #0061a61f;
+    padding: 10px;
+    border-radius: 4px;
+    
+}
+
+.user{
+  float: right;
+    margin: 0px 20px 0 0;
+    color: #171c66;
+    font-weight: bold;
+    font-size: 17px;
+}
+.col-sm-4{
+ float: left;
+    width: 33%;
+        text-align: center;
+
+}
+.user span{
+
+  color: #ffae00;
+  font-size: 12px !important;
+  font-weight: bold;
+}
+.title{
+	color: #171c66;
+    font-weight: bold;
+}
+.btn{
+	width: 92%;
+	background-color: #ffae00 !important;
+	margin: 0 auto;
+    color: #171c66 !important;
+    font-weight: bolder !important;
+
+}
+.pwd{
+      color: #ffae00;
+    font-weight: bold;
+    margin: 10px 0 !important;  
+}
+
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.btn-primary {
+
+    border-color: #fff !important;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+.cust{
+      color: #171c66;
+    font-weight: bold;
+
+
+}
+.suss{
+      font-size: 16px;
+    color: #565252;
+    font-weight: bold;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.input1{
+    width: 20% !important;
+    float: left;
+}
+
+.ennum{
+    width: 87%;
+    margin: 22px 24%;
+}
+.rowcust{
+    width: 60%;
+    margin: 0 auto;
+}
+.input2{
+    width: 40% !important;
+    float: left;
+    margin: 0 10px;
+}
+.change{
+color: #ffae00;
+    font-weight: bold;
+    float: left;
+    margin: 10px;
+}
+.time{
+    color: #ffae00;
+        margin: 10px 0 !important;
+}
+/*RESPONSIV*/
+@media (max-width:768px) and (min-width:220px){
+.login-box{
+    width: 100% !important;
+
+}
+.logo img {
+    width: 20%;
+     margin: 0; 
+}
+.box{
+
+}
+
+.fbill{
+
+}
+.ennum {
+    width: 100%;
+    margin: 22px 17%;
+    clear: both;
+}
+.input1 {
+    width: 21% !important;
+    float: left;
+}
+.input2 {
+    width: 46% !important;
+    float: left;
+    margin: 0 10px;
+}
+.rowcust1{
+  width: 100%
+}
+
+.dlist{
+      float: left;
+    width: 50%;
+}
+.boxx{
+  width: 32%;
+  float: left;
+  padding: 11px !important;
+}
+}
